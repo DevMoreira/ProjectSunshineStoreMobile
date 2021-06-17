@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SunshineStore</string>
+    <!-- Abaixo tudo relacionado a tela home -->
+    <string name="text_button_collections">COLEÇÕES</string>
+    <string name="text_button_language">TRANSLATION</string>
+    <string name="text_language_br">Português-Br</string>
+    <string name="text_language_en">English</string>
+    <!-- Abaixo tudo relacionado a authentication -->
+    <string name="text_button_back">VOLTAR</string>
+    <string name="text_button_login">ENTRAR</string>
+    <string name="text_button_register">CADASTRAR</string>
+    <string name="edit_text_register_name">Name</string>
+    <string name="edit_text_register_email">Email</string>
+    <string name="edit_text_register_password">Password</string>
+    <string name="edit_text_login_email">Email</string>
+    <string name="edit_text_login_password">Password</string>
+    <string name="text_alert_progress">VERIFICANDO OS DADOS</string>
+    <!-- Texts da tela da conta do usuário -->
+    <string name="text_captured_user">Fulano Mandrake Tondela</string>
+    <string name="text_captured_email">seilaoque@hotmail.com</string>
+    <string name="text_info_favorite">Favorites list</string>
+    <string name="text_info_cart">Lista de desejos</string>
+    <string name="text_info_purchase">Compras efetuadas</string>
+    <string name="text_info_settings">Settings</string>
+    <string name="text_info_logout">Sair</string>
+    <!-- Texts da tela de apresentação -->
+    <string name="title_navegation_departments">Navegue por departamentos</string>
+    <string name="title_navegation_characeters">Navegue por personagens</string>
+    <string name="title_navegation_teams">Navegue por times</string>
+    <string name="description_department_1">feminino</string>
+    <string name="description_department_2">masculino</string>
+    <string name="description_department_3">infantil</string>
+    <string name="description_department_4">calçados</string>
+    <string name="description_department_5">esportivo</string>
+    <string name="description_department_6">pijamas</string>
+    <string name="description_character_1">nasa</string>
+    <string name="description_character_2">batman</string>
+    <string name="description_character_3">américa</string>
+    <string name="description_character_4">simpsons</string>
+    <string name="description_character_5">aranha</string>
+    <string name="description_character_6">avengers</string>
+    <string name="description_team_1">Ceára</string>
+    <string name="description_team_2">Goiás</string>
+    <string name="description_team_3">Icasa</string>
+    <string name="description_team_4">Bahia</string>
+    <string name="description_team_5">Sport</string>
+    <string name="description_team_6">Vasco</string>
+
+</resources>

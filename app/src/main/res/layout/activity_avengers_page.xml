@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".clothing_pages.characters.AvengersPage">
+
+    <View
+        android:id="@+id/action_bar_page_avengers"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/actionbar_presentation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_back_page_avengers"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="@+id/action_bar_page_avengers"
+        app:layout_constraintTop_toTopOf="@+id/action_bar_page_avengers"
+        app:layout_constraintBottom_toBottomOf="@+id/action_bar_page_avengers"
+        android:tint="@color/black"
+        />
+
+    <View
+        android:id="@+id/avengers_clothing_1"
+        style="@style/container_components"
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:textSize="13sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_page_avengers"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_selected_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_1"
+        app:layout_constraintTop_toTopOf="@id/avengers_clothing_1"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_not_selected_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_not_selected"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_1"
+        app:layout_constraintTop_toTopOf="@id/avengers_clothing_1"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_clothing_1"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/camiseta_spider_azul"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_1"
+        app:layout_constraintEnd_toEndOf="@id/avengers_clothing_1"
+        app:layout_constraintBottom_toTopOf="@id/info_clothing_1"
+        app:layout_constraintTop_toBottomOf="@id/ic_favorite_not_selected_1"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/info_clothing_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blusa do spider azul \n\n R$ 99,90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_1"
+        app:layout_constraintEnd_toEndOf="@+id/avengers_clothing_1"
+        app:layout_constraintBottom_toBottomOf="@+id/avengers_clothing_1"/>
+
+    <View
+        android:id="@+id/avengers_clothing_2"
+        style="@style/container_components"
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:textSize="13sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/avengers_clothing_1"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_page_avengers"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_selected_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_2"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_2"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_not_selected_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_not_selected"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_2"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_2"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_clothing_2"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/camiseta_spider_azul"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_2"
+        app:layout_constraintEnd_toEndOf="@id/avengers_clothing_2"
+        app:layout_constraintBottom_toTopOf="@id/info_clothing_2"
+        app:layout_constraintTop_toBottomOf="@id/ic_favorite_not_selected_2"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/info_clothing_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blusa do spider azul \n\n R$ 99,90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_2"
+        app:layout_constraintEnd_toEndOf="@+id/avengers_clothing_2"
+        app:layout_constraintBottom_toBottomOf="@+id/avengers_clothing_2"/>
+
+    <View
+        android:id="@+id/avengers_clothing_3"
+        style="@style/container_components"
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:textSize="13sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avengers_clothing_1"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_selected_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_3"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_3"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_not_selected_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_not_selected"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_3"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_3"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_clothing_3"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/camiseta_spider_azul"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_3"
+        app:layout_constraintEnd_toEndOf="@id/avengers_clothing_3"
+        app:layout_constraintBottom_toTopOf="@id/info_clothing_3"
+        app:layout_constraintTop_toBottomOf="@id/ic_favorite_not_selected_3"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/info_clothing_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blusa do spider azul \n\n R$ 99,90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_3"
+        app:layout_constraintEnd_toEndOf="@+id/avengers_clothing_3"
+        app:layout_constraintBottom_toBottomOf="@+id/avengers_clothing_3"/>
+
+    <View
+        android:id="@+id/avengers_clothing_4"
+        style="@style/container_components"
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/avengers_clothing_3"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_3"
+        app:layout_constraintTop_toBottomOf="@+id/avengers_clothing_2"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_selected_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_4"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_4"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_not_selected_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_not_selected"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_4"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_4"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_clothing_4"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/camiseta_spider_azul"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_4"
+        app:layout_constraintEnd_toEndOf="@id/avengers_clothing_4"
+        app:layout_constraintBottom_toTopOf="@id/info_clothing_4"
+        app:layout_constraintTop_toBottomOf="@id/ic_favorite_not_selected_4"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/info_clothing_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blusa do spider azul \n\n R$ 99,90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_4"
+        app:layout_constraintEnd_toEndOf="@+id/avengers_clothing_4"
+        app:layout_constraintBottom_toBottomOf="@+id/avengers_clothing_4"/>
+
+    <View
+        android:id="@+id/avengers_clothing_5"
+        style="@style/container_components"
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:textSize="13sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avengers_clothing_3"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_selected_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_5"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_5"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_not_selected_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_not_selected"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_5"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_5"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_clothing_5"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/camiseta_spider_azul"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_5"
+        app:layout_constraintEnd_toEndOf="@id/avengers_clothing_5"
+        app:layout_constraintBottom_toTopOf="@id/info_clothing_5"
+        app:layout_constraintTop_toBottomOf="@id/ic_favorite_not_selected_5"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/info_clothing_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blusa do spider azul \n\n R$ 99,90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_5"
+        app:layout_constraintEnd_toEndOf="@+id/avengers_clothing_5"
+        app:layout_constraintBottom_toBottomOf="@+id/avengers_clothing_5"/>
+
+    <View
+        android:id="@+id/avengers_clothing_6"
+        style="@style/container_components"
+        android:layout_width="150dp"
+        android:layout_height="240dp"
+        android:textSize="13sp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/avengers_clothing_5"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_5"
+        app:layout_constraintTop_toBottomOf="@+id/avengers_clothing_4"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_selected_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_6"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_6"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ic_favorite_not_selected_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_not_selected"
+        android:padding="10dp"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/avengers_clothing_6"
+        app:layout_constraintTop_toTopOf="@+id/avengers_clothing_6"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_clothing_6"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/camiseta_spider_azul"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_6"
+        app:layout_constraintEnd_toEndOf="@id/avengers_clothing_6"
+        app:layout_constraintBottom_toTopOf="@id/info_clothing_6"
+        app:layout_constraintTop_toBottomOf="@id/ic_favorite_not_selected_6"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/info_clothing_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blusa do spider azul \n\n R$ 99,90"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintStart_toStartOf="@id/avengers_clothing_6"
+        app:layout_constraintEnd_toEndOf="@+id/avengers_clothing_6"
+        app:layout_constraintBottom_toBottomOf="@+id/avengers_clothing_6"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

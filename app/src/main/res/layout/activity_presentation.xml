@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/actionbar_presentation"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation_page.Presentation">
+
+        <View
+            android:id="@+id/action_bar_presentation"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_info_account_presentation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_person_presentation"
+            android:layout_marginStart="25dp"
+            app:layout_constraintStart_toStartOf="@id/action_bar_presentation"
+            app:layout_constraintTop_toTopOf="@id/action_bar_presentation"
+            app:layout_constraintBottom_toBottomOf="@id/action_bar_presentation"
+            android:tint="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button_login_presentation"
+            android:background="@drawable/background_buttons_presentation"
+            android:text="ENTRAR"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="9dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/action_bar_presentation"
+            app:layout_constraintTop_toTopOf="@id/action_bar_presentation"
+            app:layout_constraintBottom_toBottomOf="@id/action_bar_presentation"
+            android:tint="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/button_register_presentation"
+            android:background="@drawable/background_buttons_presentation"
+            android:text="CADASTRAR"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="9dp"
+            android:layout_marginStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/button_login_presentation"
+            app:layout_constraintTop_toTopOf="@id/action_bar_presentation"
+            app:layout_constraintBottom_toBottomOf="@id/action_bar_presentation"
+            android:tint="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_perfil_user_presentation"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_favorite"
+            app:tint="@color/white"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="@id/action_bar_presentation"
+            app:layout_constraintTop_toTopOf="@id/action_bar_presentation"
+            app:layout_constraintBottom_toBottomOf="@id/action_bar_presentation"
+            android:tint="@color/black"
+            />
+
+        <View
+            android:id="@+id/background_field"
+            android:layout_width="181dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="@+id/action_bar_presentation"
+            app:layout_constraintTop_toBottomOf="@+id/action_bar_presentation"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/types_departments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_navegation_departments"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginStart="50dp"
+            app:layout_constraintStart_toStartOf="@id/action_bar_presentation"
+            app:layout_constraintBottom_toBottomOf="@+id/background_field"
+            />
+
+        <View
+            android:id="@+id/background_field_2"
+            android:layout_width="378dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="61.2dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field">
+
+            <HorizontalScrollView
+                android:id="@+id/bearing"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginEnd="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_field_3"
+                tools:ignore="ScrollViewCount,UselessParent">
+
+                <TableLayout
+                    android:id="@+id/table_departments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="@id/background_field"
+                    app:layout_constraintTop_toBottomOf="@+id/bearing_2">
+
+                    <TableRow tools:ignore="UselessParent">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_feminine_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="50dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_masculine_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="25dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_childish_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_shoes_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_sporty_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_pajamas_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+                    </TableRow>
+
+                    <TableRow tools:ignore="UselessParent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_department_1"
+                            android:layout_marginStart="51dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_department_2"
+                            android:layout_marginStart="20dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_department_3"
+                            android:layout_marginStart="20dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_department_4"
+                            android:layout_marginStart="18dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_department_5"
+                            android:layout_marginStart="18dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_department_6"
+                            android:layout_marginStart="18dp"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/background_field_3"
+            android:layout_width="168dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field_2"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/types_characters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_navegation_characeters"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="2dp"
+            app:layout_constraintStart_toStartOf="@id/background_field"
+            app:layout_constraintBottom_toBottomOf="@+id/background_field_3"
+            />
+
+        <View
+            android:id="@+id/background_field_4"
+            android:layout_width="378dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="212.4dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field_3">
+
+            <HorizontalScrollView
+                android:id="@+id/bearing_2"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginEnd="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_field_3"
+                tools:ignore="ScrollViewCount,UselessParent">
+
+                <TableLayout
+                    android:id="@+id/table_characters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="@id/background_field"
+                    app:layout_constraintTop_toBottomOf="@+id/bearing_2">
+
+                    <TableRow tools:ignore="UselessParent">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_nasa_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="50dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_batman_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_america_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_simpsons_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_spider_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_avengers_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+                    </TableRow>
+
+                    <TableRow tools:ignore="UselessParent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_character_1"
+                            android:layout_marginStart="60dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_character_2"
+                            android:layout_marginStart="18dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_character_3"
+                            android:layout_marginStart="18dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_character_4"
+                            android:layout_marginStart="15dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_character_5"
+                            android:layout_marginStart="19dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_character_6"
+                            android:layout_marginStart="18dp"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/background_field_5"
+            android:layout_width="122dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field_4"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/types_teams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_navegation_teams"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="2dp"
+            app:layout_constraintStart_toStartOf="@id/background_field"
+            app:layout_constraintBottom_toBottomOf="@+id/background_field_5"
+            />
+
+        <View
+            android:id="@+id/background_field_6"
+            android:layout_width="378dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="61dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field_5"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/background_field"
+            app:layout_constraintTop_toBottomOf="@+id/background_field_5">
+
+            <HorizontalScrollView
+                android:id="@+id/bearing_3"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginEnd="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_field_5"
+                tools:ignore="ScrollViewCount,UselessParent">
+
+                <TableLayout
+                    android:id="@+id/table_teams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TableRow tools:ignore="UselessParent">
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_ceara_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="50dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_goias_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_icasa_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_bahia_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_sport_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/options_vasco_clothes"
+                            style="@style/container_options_presentation"
+                            android:layout_marginStart="16dp"
+                            />
+                    </TableRow>
+
+                    <TableRow tools:ignore="UselessParent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_team_1"
+                            android:layout_marginStart="56dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_team_2"
+                            android:layout_marginStart="23dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_team_3"
+                            android:layout_marginStart="24dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_team_4"
+                            android:layout_marginStart="23dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_team_5"
+                            android:layout_marginStart="24dp"
+                            />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/description_options_presentation"
+                            android:text="@string/description_team_6"
+                            android:layout_marginStart="23dp"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

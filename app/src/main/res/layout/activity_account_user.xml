@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".user_page.AccountUser">
+
+        <View
+            android:id="@+id/action_bar_accountUser"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/actionbar_presentation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_back_account"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toStartOf="@+id/action_bar_accountUser"
+            app:layout_constraintTop_toTopOf="@+id/action_bar_accountUser"
+            app:layout_constraintBottom_toBottomOf="@+id/action_bar_accountUser"
+            android:tint="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_settings_account"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_settings"
+            android:layout_marginStart="250dp"
+            app:layout_constraintStart_toStartOf="@+id/action_bar_accountUser"
+            app:layout_constraintEnd_toEndOf="@+id/action_bar_accountUser"
+            app:layout_constraintTop_toTopOf="@+id/action_bar_accountUser"
+            app:layout_constraintBottom_toBottomOf="@+id/action_bar_accountUser"
+            android:tint="@color/black"
+            />
+
+        <View
+            android:id="@+id/perfil_user"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/perfil_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_perfil_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person"
+            app:layout_constraintStart_toStartOf="@+id/perfil_user"
+            app:layout_constraintEnd_toEndOf="@+id/perfil_user"
+            app:layout_constraintTop_toTopOf="@+id/perfil_user"
+            app:layout_constraintBottom_toBottomOf="@+id/perfil_user"
+            android:tint="@color/black"
+            />
+
+        <View
+            android:id="@+id/container_components"
+            style="@style/container_components"
+            android:layout_height="360dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:layout_constraintStart_toStartOf="@+id/perfil_user"
+            app:layout_constraintEnd_toEndOf="@+id/perfil_user"
+            app:layout_constraintTop_toBottomOf="@+id/perfil_user"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_user_inside_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_person"
+            android:tint="@color/white"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/perfil_user"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_info_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="42dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/perfil_user"
+            app:layout_constraintStart_toEndOf="@+id/ic_user_inside_container"
+            app:layout_constraintEnd_toEndOf="@+id/perfil_user"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_email_inside_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_email"
+            android:tint="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/ic_user_inside_container"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_info_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="30dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/text_info_user"
+            app:layout_constraintStart_toEndOf="@+id/ic_email_inside_container"
+            app:layout_constraintEnd_toEndOf="@+id/perfil_user"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_cart_inside_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_cart"
+            android:tint="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_email_inside_container"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_info_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="33dp"
+            android:text="@string/text_info_cart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/text_info_email"
+            app:layout_constraintStart_toEndOf="@+id/ic_cart_inside_container"
+            app:layout_constraintEnd_toEndOf="@+id/perfil_user"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_purchase_inside_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_purchases_made"
+            android:tint="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/ic_cart_inside_container"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_info_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="13dp"
+            android:text="@string/text_info_purchase"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/text_info_cart"
+            app:layout_constraintStart_toEndOf="@+id/ic_purchase_inside_container"
+            app:layout_constraintEnd_toEndOf="@+id/perfil_user"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_logout_inside_container"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_exit"
+            android:tint="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_info_purchase"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_info_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="130dp"
+            android:text="@string/text_info_logout"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/perfil_user"
+            app:layout_constraintStart_toEndOf="@+id/ic_logout_inside_container"
+            app:layout_constraintTop_toBottomOf="@+id/text_info_purchase" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
