@@ -4,7 +4,7 @@ Aplicativo android de uma loja virtual de roupas ainda em desenvolvimento. Andro
 
 # Instalação
 
-Para instalar o app, apenas acessa a pasta app. E em seguida baixa o apk (SunshineStore.apk).
+Para instalar o app, apenas acessa a pasta app. E em seguida baixe o apk (SunshineStore.apk).
 E instale em seu dispositivo android.
 
 OBS: Não contém virus. Até porque não tenho intenções de hackear.
